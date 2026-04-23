@@ -1,0 +1,20 @@
+[project]
+name = "memory-test-py"
+version = "1.0.0"
+description = "LangChain Python memory examples converted from memory-test"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "langchain==1.0.0",
+    "langchain-openai==1.0.1",
+    "langchain-text-splitters==1.0.0",
+    "langchain-core==1.0.4",
+    "python-dotenv==1.0.1",
+    "setuptools<81",
+    "pymilvus==2.4.9",
+    "grpcio==1.62.2",
+    "marshmallow<4",
+    "tiktoken==0.8.0",
+]
+
+[dependency-groups]
+dev = []

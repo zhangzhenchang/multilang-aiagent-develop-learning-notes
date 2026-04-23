@@ -1,0 +1,21 @@
+[project]
+name = "milvus-test-py"
+version = "1.0.0"
+description = "LangChain Python Milvus examples converted from milvus-test"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+   "langchain==1.0.0",
+    "langchain-openai==1.0.1",
+    "langchain-text-splitters==1.0.0",
+    "python-dotenv==1.0.1",
+    "setuptools<81",
+    "pymilvus==2.4.9",
+    "grpcio==1.62.2",
+    "ebooklib==0.18",
+    "beautifulsoup4==4.12.3",
+    "tiktoken==0.8.0",
+    "marshmallow<4",
+]
+
+[dependency-groups]
+dev = []

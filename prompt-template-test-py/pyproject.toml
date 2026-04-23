@@ -1,0 +1,19 @@
+[project]
+name = "prompt-template-test-py"
+version = "1.0.0"
+description = "LangChain 1.0 Python prompt template examples"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "langchain==1.0.0",
+  "langchain-openai==1.0.1",
+  "langchain-core==1.0.4",
+  "langchain-community==0.3.29",
+  "python-dotenv==1.0.1",
+  "tiktoken==0.8.0",
+  "setuptools<81"
+]
+
+[project.optional-dependencies]
+milvus = [
+  "pymilvus==2.4.9"
+]

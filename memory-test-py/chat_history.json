@@ -1,0 +1,145 @@
+{
+  "user_session_001": [
+    {
+      "type": "human",
+      "data": {
+        "content": "红烧肉怎么做",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "type": "human",
+        "name": null,
+        "id": null
+      }
+    },
+    {
+      "type": "ai",
+      "data": {
+        "content": "红烧肉是一道非常受欢迎的传统中国菜肴，以其色泽红亮、肥而不腻而著称。下面我将详细介绍如何制作一道美味的红烧肉。\n\n### 材料准备：\n- 五花肉500克（建议选择带皮的五花肉，这样脂肪分布均匀，口感更佳）\n- 生姜3片\n- 大葱1段\n- 老抽2大勺（用于上色）\n- 生抽1大勺（用于调味）\n- 料酒1大勺\n- 白糖4大勺（或根据个人口味调整）\n- 清水适量\n\n### 制作步骤：\n\n#### 1. 准备材料：\n- 将五花肉切成约3厘米见方的小块。\n- 姜切片，葱切段备用。\n\n#### 2. 焯水去血沫：\n- 锅中加水，放入五花肉块，大火煮开后撇去浮沫，捞出沥干水分。\n\n#### 3. 上色：\n- 锅中放少许油，加入白糖，小火慢慢熬制至糖溶化并开始变色，注意不要炒糊。\n- 当糖色呈深红色时，迅速倒入焯好水的五花肉块，快速翻炒均匀，使每一块肉都裹上糖色。\n\n#### 4. 加调料炖煮：\n- 加入生姜片和大葱段，继续翻炒均匀。\n- 倒入老抽和生抽，翻炒均匀上色。\n- 加入足够的清水，没过肉块即可。水量要足够，因为炖煮过程中会减少。\n- 加入料酒，大火烧开后转小火慢炖1.5到2小时，直到肉质软烂，汤汁浓稠。\n\n#### 5. 最后调味：\n- 根据个人口味调整盐分，尝尝味道是否合适。\n- 如果汤汁太稠，可以适当加点水稀释。\n- 关火前撒上一些葱花增香。\n\n### 注意事项：\n- 在炒糖色的过程中一定要小心，糖色容易糊，一旦糊了就很难再恢复原味。\n- 炖煮过程中火候不宜太大，以免肉质变得过于紧实，影响口感。\n- 可以在炖煮过程中加入一些八角、桂皮等香料，增加风味。\n\n按照以上步骤，你就可以做出一道美味的红烧肉了。希望你能享受烹饪的乐趣，并与家人朋友一起分享这份美味！",
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "response_metadata": {
+          "token_usage": {
+            "completion_tokens": 537,
+            "prompt_tokens": 32,
+            "total_tokens": 569,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+          },
+          "model_provider": "openai",
+          "model_name": "qwen-coder-turbo",
+          "system_fingerprint": null,
+          "id": "chatcmpl-c91334fe-bfc9-90b5-9843-7039122c1293",
+          "finish_reason": "stop",
+          "logprobs": null
+        },
+        "type": "ai",
+        "name": null,
+        "id": "lc_run--d70655d7-5632-4f33-9eb5-91da8dc7717d-0",
+        "tool_calls": [],
+        "invalid_tool_calls": [],
+        "usage_metadata": {
+          "input_tokens": 32,
+          "output_tokens": 537,
+          "total_tokens": 569,
+          "input_token_details": {},
+          "output_token_details": {}
+        }
+      }
+    },
+    {
+      "type": "human",
+      "data": {
+        "content": "好吃吗？",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "type": "human",
+        "name": null,
+        "id": null
+      }
+    },
+    {
+      "type": "ai",
+      "data": {
+        "content": "红烧肉是一道非常经典且美味的菜肴，深受大家的喜爱。它的特点在于色泽红亮、肉质鲜美、肥而不腻。如果你按照上述步骤进行制作，相信你会得到一份非常美味的红烧肉。记得在烹饪过程中保持耐心，特别是在炖煮阶段，让肉质充分吸收调料的味道。祝你烹饪愉快，享受美食！",
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "response_metadata": {
+          "token_usage": {
+            "completion_tokens": 78,
+            "prompt_tokens": 582,
+            "total_tokens": 660,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+          },
+          "model_provider": "openai",
+          "model_name": "qwen-coder-turbo",
+          "system_fingerprint": null,
+          "id": "chatcmpl-df4c76c7-3f93-9ad6-8d61-13b209925506",
+          "finish_reason": "stop",
+          "logprobs": null
+        },
+        "type": "ai",
+        "name": null,
+        "id": "lc_run--698fef1a-e39e-4f0d-994f-da684cecacc4-0",
+        "tool_calls": [],
+        "invalid_tool_calls": [],
+        "usage_metadata": {
+          "input_tokens": 582,
+          "output_tokens": 78,
+          "total_tokens": 660,
+          "input_token_details": {},
+          "output_token_details": {}
+        }
+      }
+    },
+    {
+      "type": "human",
+      "data": {
+        "content": "需要哪些食材？",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "type": "human",
+        "name": null,
+        "id": null
+      }
+    },
+    {
+      "type": "ai",
+      "data": {
+        "content": "好的，红烧肉的食材相对简单，主要需要以下几种：\n\n- **五花肉**：这是红烧肉的主要原料，建议选择带皮的五花肉，因为这样的肉脂肪分布均匀，口感更佳。\n- **生姜**：用来去腥增香，通常使用3片左右。\n- **大葱**：同样用于提香，大约用一段。\n- **老抽**：用于上色，2大勺左右。\n- **生抽**：用于调味，1大勺左右。\n- **料酒**：去腥增香，1大勺左右。\n- **白糖**：4大勺左右，用于上色和调味。\n- **清水**：适量，没过肉块即可。\n\n这些食材基本就能满足红烧肉的制作需求了。希望这能帮到你！如果还有其他问题，请随时告诉我。",
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "response_metadata": {
+          "token_usage": {
+            "completion_tokens": 183,
+            "prompt_tokens": 676,
+            "total_tokens": 859,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+          },
+          "model_provider": "openai",
+          "model_name": "qwen-coder-turbo",
+          "system_fingerprint": null,
+          "id": "chatcmpl-7ab6c427-00b2-9eac-ac63-b9553298ed1a",
+          "finish_reason": "stop",
+          "logprobs": null
+        },
+        "type": "ai",
+        "name": null,
+        "id": "lc_run--81f90b2c-7d41-44b4-8534-683c864d93a1-0",
+        "tool_calls": [],
+        "invalid_tool_calls": [],
+        "usage_metadata": {
+          "input_tokens": 676,
+          "output_tokens": 183,
+          "total_tokens": 859,
+          "input_token_details": {},
+          "output_token_details": {}
+        }
+      }
+    }
+  ]
+}
