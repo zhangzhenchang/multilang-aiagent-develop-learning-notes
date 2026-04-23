@@ -47,3 +47,6 @@ out/
 
 # Claude Code local config
 .claude/
+
+# Milvus / Docker runtime data
+volumes/
