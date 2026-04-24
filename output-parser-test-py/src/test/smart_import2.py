@@ -45,6 +45,10 @@ class FriendList(BaseModel):
 # LCEL chain：prompt template | structured model
 # 在模块级构建，避免每次调用重复初始化
 # ──────────────────────────────────────────────────────────
+'''
+ChatPromptTemplate 输出的是一条 HumanMessage（属于 chat messages 列表），而 PromptTemplate                  
+  输出的直接是纯文本字符串
+'''
 _prompt = ChatPromptTemplate.from_template("""\
 请从以下文本中提取所有好友信息，文本中可能包含一个或多个人的信息。
 
