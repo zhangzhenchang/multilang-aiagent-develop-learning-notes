@@ -18,9 +18,10 @@
 
 ### 1. Hello LangChain — 入门集成
 
-| 目录                   | 说明                                                |
-| ---------------------- | --------------------------------------------------- |
-| `hello-nest-langchain` | NestJS 中接入 LangChain，调用 OpenAI 模型的最简示例 |
+| 目录                      | 说明                                                        |
+| ------------------------- | ----------------------------------------------------------- |
+| `hello-nest-langchain`    | NestJS 中接入 LangChain，调用 OpenAI 模型的最简示例         |
+| `hello-nest-langchain-py` | Python：FastAPI + LangChain，含 Book CRUD、AI 聊天（SSE）   |
 
 ---
 
@@ -151,7 +152,7 @@
 | AI 框架    | LangChain.js / LangChain Python（1.0）、LangGraph |
 | LLM        | OpenAI API                                        |
 | 向量数据库 | Milvus 2.x                                        |
-| 后端框架   | NestJS（Node.js）                                 |
+| 后端框架   | NestJS（Node.js）、FastAPI（Python）              |
 | 前端框架   | React 19 + Vite + TailwindCSS                     |
 | 语音服务   | 腾讯云 TTS / ASR                                  |
 | 工具协议   | Model Context Protocol（MCP）                     |
