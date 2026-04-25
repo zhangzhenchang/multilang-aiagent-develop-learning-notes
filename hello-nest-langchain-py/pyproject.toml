@@ -1,0 +1,38 @@
+[project]
+name = "hello-nest-langchain-py2"
+version = "2.0.0"
+description = "FastAPI + LangChain 1.0 最佳实践版 — 从 NestJS hello-nest-langchain 迁移"
+requires-python = ">=3.11"
+dependencies = [
+    # Web 框架
+    "fastapi>=0.115.0",
+    # 类型安全的配置管理（替代 python-dotenv 直接读取 os.getenv）
+    "pydantic-settings>=2.7.0",
+    # LangChain 核心 + OpenAI 集成（无需安装 langchain 元包）
+    "langchain-core>=1.0.0",
+    "langchain-openai>=1.0.0",
+    # ASGI 服务器（standard 含 websockets / httptools 加速）
+    "uvicorn[standard]>=0.34.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.24.0",
+    "httpx>=0.27.0",      # FastAPI TestClient 底层依赖
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+# src/ 下所有包都打入 wheel（src layout）
+packages = ["src"]
+
+[tool.pytest.ini_options]
+# asyncio_mode = "auto" 使所有 async def test_* 自动被识别为异步测试
+asyncio_mode = "auto"
+testpaths = ["tests"]
+# pythonpath 让 pytest 把项目根目录加入 sys.path，从而 import src.xxx 不报错
+pythonpath = ["."]

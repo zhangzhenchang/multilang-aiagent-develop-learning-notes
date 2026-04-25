@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>SSE 流式对话测试</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 16px; }
+    textarea { width: 100%; box-sizing: border-box; }
+    #output {
+      white-space: pre-wrap;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 12px;
+      min-height: 120px;
+      margin-top: 12px;
+      background: #f9f9f9;
+    }
+    button { margin-top: 8px; padding: 6px 18px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>SSE 流式对话测试</h2>
+  <textarea id="query" rows="3" placeholder="输入问题…">你好，介绍一下 LangChain</textarea>
+  <br />
+  <button id="btn">发送</button>
+  <div id="output"></div>
+
+  <script>
+    const btn = document.getElementById('btn');
+    const output = document.getElementById('output');
+
+    btn.addEventListener('click', () => {
+      const query = document.getElementById('query').value.trim();
+      if (!query) return;
+
+      output.textContent = '';
+      btn.disabled = true;
+
+      const url = `/ai/chat/stream?query=${encodeURIComponent(query)}`;
+      const es = new EventSource(url);
+
+      es.onmessage = (e) => {
+        output.textContent += e.data;
+      };
+
+      es.addEventListener('done', () => {
+        es.close();
+        btn.disabled = false;
+      });
+
+      es.onerror = () => {
+        es.close();
+        btn.disabled = false;
+      };
+    });
+  </script>
+</body>
+</html>
