@@ -104,7 +104,7 @@ async def retrieve_relevant_content(question: str, k: int) -> List[dict]:
         print(f"检索内容时出错: {e}", file=sys.stderr)
         return []
 
-
+# 多路召回融合
 def merge_unique(existing: List[dict], new_docs: List[dict]) -> List[dict]:
     """按文档 id 去重合并，同 id 保留更高相似度分数，结果按分数降序排列。"""
     doc_map: dict[str, dict] = {}
