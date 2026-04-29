@@ -126,6 +126,23 @@ async def bocha_web_search(query: str, count: int = 10) -> str:
         "Content-Type": "application/json",
     }
 
+    '''
+    为什么用 async with：                                                                                     
+    - 自动关闭连接，避免资源泄漏                                                                            
+    - 即使发生异常也能正确清理                                                                                
+    - 支持连接池复用，提高性能                                                                              
+                                                                                                                
+    等价于手动管理：                                                                                          
+    client = httpx.AsyncClient(timeout=30.0)                                                                  
+    try:                                                                                                      
+        response = await client.get(url)                                                                      
+    finally:                                                                                                
+        await client.aclose()  # 必须手动关闭  
+    '''
+    '''
+      - 同步代码 → requests（最简单）
+      - 异步代码 → httpx（API 友好）或 aiohttp（生态成熟） 
+    '''
     # 使用 httpx 异步客户端，避免阻塞事件循环
     async with httpx.AsyncClient(timeout=30.0) as client:
         try:
