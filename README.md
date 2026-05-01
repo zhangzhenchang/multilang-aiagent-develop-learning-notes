@@ -145,6 +145,22 @@
 
 ---
 
+### 13. Advanced RAG — 高级检索增强生成
+
+| 目录              | 说明                                                             |
+| ----------------- | ---------------------------------------------------------------- |
+| `advanced-rag`    | JS：四种高级 RAG 策略，LangChain.js + LangGraph + Milvus 实现   |
+| `advanced-rag-py` | Python：同上，LangChain + LangGraph Python 实现，支持 Web 搜索  |
+
+涵盖内容：
+
+- **Naive RAG**：基础检索-生成管道
+- **Query Router RAG**：根据问题复杂度智能路由，简单问题直接由 LLM 回答，复杂问题走向量检索
+- **Multi-hop RAG**：将复杂问题拆解为子问题，迭代检索与规划，逐步聚合答案
+- **Web Fallback RAG**：本地 Milvus 检索为主，结合 Bocha 网络搜索兜底，提升知识覆盖率
+
+---
+
 ## 技术栈
 
 | 分类       | 技术                                              |
